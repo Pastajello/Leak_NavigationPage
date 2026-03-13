@@ -12,4 +12,9 @@ public partial class MainPage : ContentPage
     {
         Navigation.PushModalAsync(new NavigationPage(new MainPage()));
     }
+
+    private void Button_OnClicked(object? sender, EventArgs e)
+    {
+        Navigation.PopModalAsync();
+    }
 }

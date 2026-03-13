@@ -5,10 +5,21 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <Button
-        Clicked="OnCounterClicked"
-        HorizontalOptions="Fill"
-        Text="Click me"
-        x:Name="CounterBtn" />
+    <Grid>
+
+        <Button
+            Clicked="Button_OnClicked"
+            HorizontalOptions="Start"
+            Margin="20"
+            Text="Back"
+            WidthRequest="100" />
+        <Button
+            Clicked="OnCounterClicked"
+            HorizontalOptions="End"
+            Margin="20"
+            Text="Navigate"
+            WidthRequest="100" />
+    </Grid>
+
 
 </ContentPage>
